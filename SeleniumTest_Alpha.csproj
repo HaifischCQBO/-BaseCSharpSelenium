@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="TestProject.SDK" Version="0.65.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="SeleniumTestLocal\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="SeleniumTestLocal\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="SeleniumTestLocal\**" />
+    </ItemGroup>
+
+</Project>

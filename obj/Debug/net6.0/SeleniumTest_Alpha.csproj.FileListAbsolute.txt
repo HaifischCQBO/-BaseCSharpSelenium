@@ -1,0 +1,12 @@
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\bin\Debug\net6.0\SeleniumTest_Alpha.deps.json
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\bin\Debug\net6.0\SeleniumTest_Alpha.dll
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\bin\Debug\net6.0\SeleniumTest_Alpha.pdb
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.csproj.AssemblyReference.cache
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.AssemblyInfoInputs.cache
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.AssemblyInfo.cs
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.csproj.CoreCompileInputs.cache
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.dll
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\refint\SeleniumTest_Alpha.dll
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\SeleniumTest_Alpha.pdb
+C:\Users\victo\RiderProjects\SeleniumTest_Alpha\obj\Debug\net6.0\ref\SeleniumTest_Alpha.dll
