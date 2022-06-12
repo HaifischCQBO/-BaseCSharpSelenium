@@ -1,0 +1,7 @@
+﻿{
+  "allure": {
+    "directory": "D:\\Users\\victo\\Documents\\GitHub\\BaseCSharpSelenium\\allure-results",
+    "cleanResultDirectory": true,
+    "allowLocalHistoryTrend": true
+  }
+}

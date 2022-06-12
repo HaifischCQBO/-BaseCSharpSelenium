@@ -21,5 +21,11 @@ public class LoginPage
         _driver.FindElement(txtUserName).SendKeys(userName);
         _driver.FindElement(txtPassword).SendKeys(password);
         _driver.FindElement(btnLogin).Submit();
+    } 
+    public void PerformLogin_bad(string userName, string password)
+    {
+        _driver.FindElement(By.Id("d")).SendKeys(userName);
+        _driver.FindElement(txtPassword).SendKeys(password);
+        _driver.FindElement(btnLogin).Submit();
     }
 }

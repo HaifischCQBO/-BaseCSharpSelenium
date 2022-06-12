@@ -1,10 +1,32 @@
-﻿OS junk files [Tt]humbs.db *.DS_Store
+﻿# From .NET Core 3.0 you can use the command: `dotnet new gitignore` to generate a customizable .gitignore file
 
-*.[Oo]bj *.user *.aps *.pch *.vspscc *.vssscc *_i.c *_p.c *.ncb *.suo *.tlb *.tlh *.bak *.[Cc]ache *.ilk *.log *.lib *.sbr *.sdf .pyc .xml ipch/ obj/ [Bb]in [Dd]ebug/ [Rr]elease/ Ankh.NoLoad
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
 
- _ReSharper*/ .resharper [Tt]est[Rr]esult
+# Visual Studio Code
+.vscode
 
-[Bb]uild/
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.png
 
-.svn
-.png
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
