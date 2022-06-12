@@ -1,0 +1,91 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "DESKTOP-8KMROJP",
+    "children" : [ {
+      "name" : "NonParallelWorker",
+      "children" : [ {
+        "name" : "TestMethod_fail",
+        "uid" : "cfa037690e2e03d6",
+        "parentUid" : "757d0b1ebae154f4b8af53d6ac445ce6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655022136824,
+          "stop" : 1655022139093,
+          "duration" : 2269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMethod_fail",
+        "uid" : "49e92f4014f2f778",
+        "parentUid" : "757d0b1ebae154f4b8af53d6ac445ce6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655022076505,
+          "stop" : 1655022078565,
+          "duration" : 2060
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMethod1",
+        "uid" : "4bf2064a4f60271a",
+        "parentUid" : "757d0b1ebae154f4b8af53d6ac445ce6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655022078585,
+          "stop" : 1655022081328,
+          "duration" : 2743
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMethod1",
+        "uid" : "612ad18eeb86733d",
+        "parentUid" : "757d0b1ebae154f4b8af53d6ac445ce6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655022061907,
+          "stop" : 1655022065070,
+          "duration" : 3163
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMethod1",
+        "uid" : "6e2b92f8454f2f43",
+        "parentUid" : "757d0b1ebae154f4b8af53d6ac445ce6",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655022139113,
+          "stop" : 1655022141919,
+          "duration" : 2806
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMethod_fail",
+        "uid" : "214efb8b4465c7e",
+        "parentUid" : "757d0b1ebae154f4b8af53d6ac445ce6",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655022059232,
+          "stop" : 1655022061887,
+          "duration" : 2655
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "757d0b1ebae154f4b8af53d6ac445ce6"
+    } ],
+    "uid" : "3620748baae4cb4a241f79bcf290dfb9"
+  } ]
+}

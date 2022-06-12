@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "SeleniumTestLocal",
+    "children" : [ {
+      "name" : "TestMethod_fail",
+      "uid" : "cfa037690e2e03d6",
+      "parentUid" : "f2fbca726bac28e90d258c379c7c83a5",
+      "status" : "failed",
+      "time" : {
+        "start" : 1655022136824,
+        "stop" : 1655022139093,
+        "duration" : 2269
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "TestMethod1",
+      "uid" : "6e2b92f8454f2f43",
+      "parentUid" : "f2fbca726bac28e90d258c379c7c83a5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1655022139113,
+        "stop" : 1655022141919,
+        "duration" : 2806
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f2fbca726bac28e90d258c379c7c83a5"
+  } ]
+}

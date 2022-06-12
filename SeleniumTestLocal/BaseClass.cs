@@ -9,15 +9,15 @@ namespace SeleniumTestLocal;
 [TestFixture]
 public class BaseClass
 {
-    public IWebDriver driver;
+    protected IWebDriver Driver = null!;
 
     private string dirpath = @"D:\Users\victo\Documents\GitHub\BaseCSharpSelenium\SeleniumTestLocal\Screenshots";
 
     [SetUp]
     public void Setup()
     {
-        this.driver = new ChromeDriver();
-        driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
+        Driver = new ChromeDriver();
+        Driver.Navigate().GoToUrl("http://executeautomation.com/demosite/Login.html");
     }
 
 
@@ -27,7 +27,7 @@ public class BaseClass
         
         if (TestContext.CurrentContext.Result.Outcome == ResultState.Error)
         {
-            var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
             var filename = "FAILED_"+ TestContext.CurrentContext.Test.MethodName + "_screenshot_" + DateTime.Now.Ticks + ".png";
             var completePath = Path.Combine(dirpath +@"\"+ filename);
             screenshot.SaveAsFile(completePath, ScreenshotImageFormat.Png);
@@ -37,7 +37,7 @@ public class BaseClass
 
         }else if(TestContext.CurrentContext.Result.Outcome == ResultState.Success)
         {
-            var screenshot = ((ITakesScreenshot)driver).GetScreenshot();
+            var screenshot = ((ITakesScreenshot)Driver).GetScreenshot();
             var filename = "SUCCESS_"+ TestContext.CurrentContext.Test.MethodName + "_screenshot_" + DateTime.Now.Ticks + ".png";
             var completePath = Path.Combine(dirpath +@"\"+ filename);
             screenshot.SaveAsFile(completePath, ScreenshotImageFormat.Png);
@@ -46,7 +46,7 @@ public class BaseClass
             AllureLifecycle.Instance.AddAttachment(filename, "image/png", completePath);
 
         }
-        driver.Close();
-        driver.Quit();
+        Driver.Close();
+        Driver.Quit();
     }
 }

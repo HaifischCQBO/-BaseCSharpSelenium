@@ -1,0 +1,161 @@
+{
+  "uid" : "6e2b92f8454f2f43",
+  "name" : "TestMethod1",
+  "fullName" : "SeleniumTestLocal.UnitTest1.TestMethod1",
+  "historyId" : "SeleniumTestLocal.UnitTest1.TestMethod1",
+  "time" : {
+    "start" : 1655022139113,
+    "stop" : 1655022141919,
+    "duration" : 2806
+  },
+  "description" : "Just a Test for NUNIT Allure\n",
+  "descriptionHtml" : "<p>Just a Test for NUNIT Allure</p>\n",
+  "status" : "passed",
+  "statusMessage" : "TestMethod1",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "Setup",
+    "time" : {
+      "start" : 1655022141918,
+      "stop" : 1655022141918,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Just a Test for NUNIT Allure\n",
+    "status" : "passed",
+    "statusMessage" : "TestMethod1",
+    "steps" : [ {
+      "name" : "TestMethod1",
+      "time" : {
+        "start" : 1655022139113,
+        "stop" : 1655022141919,
+        "duration" : 2806
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2274c1cdd3da1bc7",
+        "name" : "SUCCESS_TestMethod1_screenshot_637906045418545141.png",
+        "source" : "2274c1cdd3da1bc7.png",
+        "type" : "image/png",
+        "size" : 49845
+      }, {
+        "uid" : "eb22d4e19e563550",
+        "name" : "Console Output",
+        "source" : "eb22d4e19e563550.txt",
+        "type" : "text/plain",
+        "size" : 134
+      } ],
+      "parameters" : [ ],
+      "shouldDisplayMessage" : false,
+      "attachmentsCount" : 2,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "TestCleanup",
+    "time" : {
+      "start" : 1655022141918,
+      "stop" : 1655022141918,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "thread",
+    "value" : "NonParallelWorker"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-8KMROJP"
+  }, {
+    "name" : "package",
+    "value" : "SeleniumTestLocal"
+  }, {
+    "name" : "testMethod",
+    "value" : "TestMethod1"
+  }, {
+    "name" : "testClass",
+    "value" : "UnitTest1"
+  }, {
+    "name" : "tag",
+    "value" : "CI"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "owner",
+    "value" : "Victor"
+  }, {
+    "name" : "subSuite",
+    "value" : "Add"
+  }, {
+    "name" : "suite",
+    "value" : "UnitTest1"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "8911",
+    "url" : "8911",
+    "type" : "issue"
+  }, {
+    "name" : "532",
+    "url" : "532",
+    "type" : "tms"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "owner" : "Victor",
+    "retries" : [ {
+      "uid" : "4bf2064a4f60271a",
+      "status" : "passed",
+      "statusDetails" : "TestMethod1",
+      "time" : {
+        "start" : 1655022078585,
+        "stop" : 1655022081328,
+        "duration" : 2743
+      }
+    }, {
+      "uid" : "612ad18eeb86733d",
+      "status" : "passed",
+      "statusDetails" : "TestMethod1",
+      "time" : {
+        "start" : 1655022061907,
+        "stop" : 1655022065070,
+        "duration" : 3163
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "CI" ]
+  },
+  "source" : "6e2b92f8454f2f43.json",
+  "parameterValues" : [ ]
+}

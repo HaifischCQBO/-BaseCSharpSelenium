@@ -1,0 +1,21 @@
+[ {
+  "uid" : "cfa037690e2e03d6",
+  "name" : "TestMethod_fail",
+  "time" : {
+    "start" : 1655022136824,
+    "stop" : 1655022139093,
+    "duration" : 2269
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "6e2b92f8454f2f43",
+  "name" : "TestMethod1",
+  "time" : {
+    "start" : 1655022139113,
+    "stop" : 1655022141919,
+    "duration" : 2806
+  },
+  "status" : "passed",
+  "severity" : "critical"
+} ]

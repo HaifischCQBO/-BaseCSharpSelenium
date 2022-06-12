@@ -25,7 +25,7 @@ public class UnitTest1 : BaseClass
     [AllureSubSuite("Add")]
     public void TestMethod1()
     {
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(Driver);
         loginPage.PerformLogin("admin", "admin");
 
         
@@ -39,7 +39,7 @@ public class UnitTest1 : BaseClass
     [AllureSubSuite("Failed")]
     public void TestMethod_fail()
     {
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(Driver);
         loginPage.PerformLogin_bad("s", "s");
 
         

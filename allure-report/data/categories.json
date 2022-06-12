@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#d\"}\n  (Session info: chrome=102.0.5005.63)",
+      "children" : [ {
+        "name" : "TestMethod_fail",
+        "uid" : "cfa037690e2e03d6",
+        "parentUid" : "94848a1ad09ffc06c6cec151632ec2d7",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655022136824,
+          "stop" : 1655022139093,
+          "duration" : 2269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "94848a1ad09ffc06c6cec151632ec2d7"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "UnitTest1",
+    "children" : [ {
+      "name" : "Failed",
+      "children" : [ {
+        "name" : "TestMethod_fail",
+        "uid" : "cfa037690e2e03d6",
+        "parentUid" : "f7b46ac4c1e278f5ebd2d2818f2a50e2",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655022136824,
+          "stop" : 1655022139093,
+          "duration" : 2269
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "f7b46ac4c1e278f5ebd2d2818f2a50e2"
+    }, {
+      "name" : "Add",
+      "children" : [ {
+        "name" : "TestMethod1",
+        "uid" : "6e2b92f8454f2f43",
+        "parentUid" : "2c0cc0d6bfa07f4c3773119061b4d0d0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1655022139113,
+          "stop" : 1655022141919,
+          "duration" : 2806
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2c0cc0d6bfa07f4c3773119061b4d0d0"
+    } ],
+    "uid" : "87a44aa5b15185bbefebea598dcfc115"
+  } ]
+}

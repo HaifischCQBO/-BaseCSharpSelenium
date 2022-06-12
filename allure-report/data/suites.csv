@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sun Jun 12 04:22:16 CLT 2022","Sun Jun 12 04:22:19 CLT 2022","2269","","UnitTest1","Failed","UnitTest1","TestMethod_fail","TestMethod_fail","Just a Test for NUNIT Allure TO FAIL
+"
+"passed","Sun Jun 12 04:22:19 CLT 2022","Sun Jun 12 04:22:21 CLT 2022","2806","","UnitTest1","Add","UnitTest1","TestMethod1","TestMethod1","Just a Test for NUNIT Allure
+"
