@@ -40,7 +40,7 @@ public class UnitTest1 : BaseClass
     public void TestMethod_fail()
     {
         LoginPage loginPage = new LoginPage(Driver);
-        loginPage.PerformLogin_bad("s", "s");
+        loginPage.PerformLogin("admin", "admin");
 
         
     }
