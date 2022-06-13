@@ -1,11 +1,6 @@
 pipeline {
   agent any
   stages {
-    stage ('Clean workspace') {
-      steps {
-        cleanWs()
-      }
-    }
     stage('Restore Nuget Dependencies') {
       steps {
         bat '"C:\\Program Files\\dotnet\\dotnet.exe" restore "D:\\Users\\victo\\Documents\\GitHub\\BaseCSharpSelenium\\SeleniumTest_Alpha.sln"'
