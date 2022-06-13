@@ -1,16 +1,15 @@
 ﻿using System.Configuration;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
-using Selenium.DefaultWaitHelpers;
 using SeleniumExtras.WaitHelpers;
 
 namespace SeleniumTest_Alpha.Helpers;
 
 public class Functions
 {
-    private IWebDriver _driver;
-    private WebDriverWait _wait;
-    private int seconds = 40;
+    private readonly IWebDriver _driver;
+    private readonly WebDriverWait _wait;
+    private readonly int seconds = 40;
 
     public Functions(IWebDriver driver)
     {
@@ -30,7 +29,7 @@ public class Functions
     public void Click(By by)
     {
         // Dynamic Wait
-        IWebElement element = _wait.Until(ExpectedConditions.ElementToBeClickable(by));
+        var element = _wait.Until(ExpectedConditions.ElementToBeClickable(by));
         // ----------------------------------------------------
         element.Click();
         Print("Perform Click in Element:" + by);
@@ -38,35 +37,25 @@ public class Functions
 
     public void SendText(By by, string text)
     {
-        IWebElement element = _wait.Until(ExpectedConditions.ElementExists(by));
+        var element = _wait.Until(ExpectedConditions.ElementExists(by));
         element.SendKeys(text);
         Print("Sends Text: " + text + " to Element:" + by);
     }
 
-    public Boolean ElementExist(By by)
+    public bool ElementExist(By by)
     {
         var element = new WebDriverWait(_driver, TimeSpan.FromSeconds(120)).Until(ExpectedConditions.ElementExists(by));
         if (element != null)
-        {
             return true;
-        }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
-    public Boolean ElementDoNotExist(By by)
+    public bool ElementDoNotExist(By by)
     {
         if (new WebDriverWait(_driver, TimeSpan.FromSeconds(120)).Until(
                 ExpectedConditions.InvisibilityOfElementLocated(by)))
-        {
             return true;
-        }
-        else
-        {
-            return false;
-        }
+        return false;
     }
 
     public void GetUrl(string url)
@@ -75,8 +64,32 @@ public class Functions
         _driver.Url = url;
     }
 
-    public string getXMLParameter(string key) {
-        return ConfigurationManager.AppSettings[key];
+    static void ReadAllSettings()  
+    {  
+        try  
+        {  
+            var appSettings = ConfigurationManager.AppSettings;  
 
+            if (appSettings.Count == 0)  
+            {  
+                Console.WriteLine("AppSettings is empty.");  
+            }  
+            else  
+            {  
+                foreach (var key in appSettings.AllKeys)  
+                {  
+                    Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);  
+                }  
+            }  
+        }  
+        catch (ConfigurationErrorsException)  
+        {  
+            Console.WriteLine("Error reading app settings");  
+        }  
+    }  
+    public string getXMLParameter(string key)
+    {
+        ReadAllSettings();
+        return ConfigurationManager.AppSettings[key];
     }
 }

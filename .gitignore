@@ -15,6 +15,7 @@ project.lock.json
 *.userosscache
 *.sln.docstates
 *.png
+/allure-report/
 
 # Build results
 [Dd]ebug/
@@ -30,3 +31,4 @@ bld/
 msbuild.log
 msbuild.err
 msbuild.wrn
+
