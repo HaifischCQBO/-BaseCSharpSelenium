@@ -25,12 +25,12 @@ public class EmPuPortfolioBulkUpload : BaseClass
     [AllureSubSuite("Portfolio Upload")]
     public void EM_PU_Upload_Portfolio_Base_Portfolio()
     {
-        var pageIndex = new PageIndex(_driver); 
+      /*  var pageIndex = new PageIndex(_driver); 
         pageIndex.goToExposureManagement();
         var pageEm = new PageEm(_driver);
         pageEm.goToPortfolioUpload();
         var portfolioUpload = new PagePorftolioUpload(_driver);
-        portfolioUpload.uploadPortfolios();
+        portfolioUpload.uploadPortfolios();*/
 
         
     }    

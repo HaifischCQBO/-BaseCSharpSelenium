@@ -26,8 +26,7 @@ public class BaseClass
         var pageLogin = new PageLogin(_driver);
         pageLogin.MakeLogin();
     }
-
-
+    
     [TearDown]
     public void TestCleanup()
     {

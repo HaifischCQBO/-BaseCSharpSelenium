@@ -1,4 +1,5 @@
 ﻿using System.Configuration;
+using Microsoft.Extensions.Configuration;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
@@ -64,32 +65,47 @@ public class Functions
         _driver.Url = url;
     }
 
-    static void ReadAllSettings()  
-    {  
-        try  
-        {  
-            var appSettings = ConfigurationManager.AppSettings;  
+    static void ReadAllSettings()
+    {
+        try
+        {
+            var appSettings = ConfigurationManager.AppSettings;
 
-            if (appSettings.Count == 0)  
-            {  
-                Console.WriteLine("AppSettings is empty.");  
-            }  
-            else  
-            {  
-                foreach (var key in appSettings.AllKeys)  
-                {  
-                    Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);  
-                }  
-            }  
-        }  
-        catch (ConfigurationErrorsException)  
-        {  
-            Console.WriteLine("Error reading app settings");  
-        }  
-    }  
+            if (appSettings.Count == 0)
+            {
+                Console.WriteLine("AppSettings is empty.");
+            }
+            else
+            {
+                foreach (var key in appSettings.AllKeys)
+                {
+                    Console.WriteLine("Key: {0} Value: {1}", key, appSettings[key]);
+                }
+            }
+        }
+        catch (ConfigurationErrorsException)
+        {
+            Console.WriteLine("Error reading app settings");
+        }
+    }
+
+    public IConfigurationRoot Configuration { get; set; }
+
     public string getXMLParameter(string key)
     {
-        ReadAllSettings();
-        return ConfigurationManager.AppSettings[key];
+        var currentDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
+
+        var startupPath = currentDirectory.Parent.Parent.Parent.FullName;
+
+        /* var browser = new ConfigurationBuilder().AddJsonFile(startupPath + "\\appsettings.json").Build();
+        var headless = new ConfigurationBuilder().AddJsonFile(startupPath + "\\appsettings.json").Build().GetSection("AppSettings")["headless"];
+        var url = new ConfigurationBuilder().AddJsonFile(startupPath + "\\appsettings.json").Build().GetSection("AppSettings")["url"];
+        var username = new ConfigurationBuilder().AddJsonFile(startupPath + "\\appsettings.json").Build().GetSection("AppSettings")["username"];
+        var password = new ConfigurationBuilder().AddJsonFile(startupPath + "\\appsettings.json").Build().GetSection("AppSettings")["password"];*/
+
+        var config = new ConfigurationBuilder().AddJsonFile(startupPath + "\\appsettings.json").Build();
+
+        Console.Out.WriteLine(config["AppSettings:" + key]);
+        return config["AppSettings:" + key];
     }
 }
