@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using SeleniumTest_Alpha.Helpers;
 
-namespace SeleniumTest_Alpha.Pages.EM;
+namespace SeleniumTest_Alpha.Pages.Solutions.EM;
 
 public class PagePorftolioUpload
 {

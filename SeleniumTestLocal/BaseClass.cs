@@ -13,6 +13,7 @@ namespace SeleniumTestLocal;
 public class BaseClass
 {
     public IWebDriver _driver = null!;
+    public Functions _functions;
 
     private string dirpath = @"D:\Users\victo\Documents\GitHub\BaseCSharpSelenium\SeleniumTestLocal\Screenshots";
 
@@ -21,8 +22,8 @@ public class BaseClass
     {
         var browserConfig = new BrowserConfig();
         _driver = browserConfig.SetUpBrowser(new Functions().getXMLParameter("browser"));
-        var functions = new Functions(_driver);
-        functions.GetUrl(functions.getXMLParameter("url"));
+        _functions = new Functions(_driver);
+        _functions.GetUrl(_functions.getXMLParameter("url"));
         var pageLogin = new PageLogin(_driver);
         pageLogin.MakeLogin();
     }

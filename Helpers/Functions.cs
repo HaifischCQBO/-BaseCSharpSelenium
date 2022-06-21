@@ -43,6 +43,16 @@ public class Functions
         Print("Sends Text: " + text + " to Element:" + by);
     }
 
+    public void SendTextByJS(By by, string text)
+    {
+        var element = _wait.Until(ExpectedConditions.ElementExists(by));
+
+        IJavaScriptExecutor jse = (IJavaScriptExecutor)_driver;
+        jse.ExecuteScript("arguments[0].value='" + text + "';", element);
+        jse.ExecuteScript("document.getElementById('" + element + "').value='" + text + "'");
+        Print("Sends Text: " + text + " to Element:" + by);
+    }
+
     public bool ElementExist(By by)
     {
         var element = new WebDriverWait(_driver, TimeSpan.FromSeconds(120)).Until(ExpectedConditions.ElementExists(by));
@@ -107,5 +117,29 @@ public class Functions
 
         Console.Out.WriteLine(config["AppSettings:" + key]);
         return config["AppSettings:" + key];
+    }
+
+    public void Pause(int seconds)
+    {
+        Thread.Sleep(seconds * 1000);
+    }
+
+    public void DownArrow(By by)
+    {
+        var element = _wait.Until(ExpectedConditions.ElementExists(by));
+        element.SendKeys(Keys.ArrowDown);
+        Print("Sends Arrow Down Key to Element:" + by);
+    }
+
+    public void Enter(By by)
+    {
+        var element = _wait.Until(ExpectedConditions.ElementExists(by));
+        element.SendKeys(Keys.Enter);
+        Print("Sends Enter Key to Element:" + by);
+    }
+
+    public string GetText(By by)
+    {
+        return _wait.Until(ExpectedConditions.ElementExists(by)).Text;
     }
 }

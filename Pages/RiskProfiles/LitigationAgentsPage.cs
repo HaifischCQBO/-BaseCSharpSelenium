@@ -2,26 +2,27 @@
 using OpenQA.Selenium;
 using SeleniumTest_Alpha.Helpers;
 
-namespace SeleniumTest_Alpha.Pages.EM;
+namespace SeleniumTest_Alpha.Pages.RiskProfiles;
 
-public class PageEm
+public class LitigationAgentsPage
 {
     private IWebDriver _driver;
     private Functions _function;
 
-    public PageEm(IWebDriver driver)
+    public LitigationAgentsPage(IWebDriver driver)
     {
         _driver = driver;
         _function = new Functions(driver);
     }
 
     // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT
-    private By _portfolioUploadButton = By.XPath("//button[text()='Go to Portfolio Upload']");
+
+    private By litigationTitleH2 = By.Id("ContentPlaceHolder1_h2Id");
 
     // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS 
-    [AllureStep("Go to Exposure Management")]
-    public void goToPortfolioUpload()
+    [AllureStep("STEP")]
+    public string GetLigitationTitle()
     {
-        _function.Click(_portfolioUploadButton);
+        return _function.GetText(litigationTitleH2);
     }
 }
