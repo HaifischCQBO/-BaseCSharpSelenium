@@ -3,9 +3,8 @@ using NUnit.Allure.Attributes;
 using NUnit.Allure.Core;
 using NUnit.Framework;
 using SeleniumTest_Alpha.Pages;
-using SeleniumTest_Alpha.Pages.Common;
-using SeleniumTest_Alpha.Pages.RiskProfiles;
 using SeleniumTest_Alpha.Pages.Solutions.EM;
+using SeleniumTest_Alpha.Pages.Utilities;
 
 namespace SeleniumTestLocal;
 
@@ -15,7 +14,7 @@ namespace SeleniumTestLocal;
 [AllureDisplayIgnored]
 public class EmPuPortfolioBulkUpload : BaseClass
 {
-    [Ignore("Not able yet to execute")]
+    //[Ignore("Debug/Omitted")]
     [Test(Description = "Upload multiples portfolios and validates the process")]
     [AllureTag("ExposureManagement")]
     [AllureSeverity(SeverityLevel.critical)]
@@ -26,11 +25,11 @@ public class EmPuPortfolioBulkUpload : BaseClass
     [AllureSubSuite("Portfolio Upload")]
     public void EM_PU_Upload_Portfolio_Base_Portfolio()
     {
-        var pageIndex = new PageIndex(_driver);
+        var pageIndex = new IndexPage(_driver);
         pageIndex.GoToExposureManagement();
-        var pageEm = new PageEm(_driver);
-        pageEm.goToPortfolioUpload();
-        var portfolioUpload = new PagePorftolioUpload(_driver);
+        var pageEm = new ExposureManagementPage(_driver);
+        pageEm.GoToPortfolioUpload();
+        var portfolioUpload = new PorftolioUploadPage(_driver);
         portfolioUpload.uploadPortfolios();
     }
 

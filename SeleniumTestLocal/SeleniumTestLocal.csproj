@@ -36,7 +36,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Screenshots" />
+      <Folder Include="resources\Screenshots" />
     </ItemGroup>
 
 </Project>

@@ -1,15 +1,48 @@
 {
-  "total" : 1,
+  "total" : 4,
   "items" : [ {
     "uid" : "87a44aa5b15185bbefebea598dcfc115",
     "name" : "UnitTest1",
     "statistic" : {
-      "failed" : 1,
+      "failed" : 2,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
+    }
+  }, {
+    "uid" : "8a9fa3d84093771a13ca7958af8decc3",
+    "name" : "Smoke Test",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "187745d7b89473e7803d7b4bd9d81a0d",
+    "name" : "Exposure Management",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
+    }
+  }, {
+    "uid" : "50f3722fcf94ed7e10163338229e32bc",
+    "name" : "Ignored",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 13,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 13
     }
   } ]
 }

@@ -1,21 +1,191 @@
 [ {
-  "uid" : "6e2b92f8454f2f43",
-  "name" : "TestMethod1",
+  "uid" : "d1cf01a63f542aa4",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
   "time" : {
-    "start" : 1655022139113,
-    "stop" : 1655022141919,
-    "duration" : 2806
+    "start" : 1655869882322,
+    "stop" : 1655869882322,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "3b325dddfe94ccea",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655439725554,
+    "stop" : 1655439725554,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f5511ee21f78f20c",
+  "name" : "MainPage_SearchBarTesting",
+  "time" : {
+    "start" : 1655788981245,
+    "stop" : 1655789023291,
+    "duration" : 42046
   },
   "status" : "passed",
   "severity" : "critical"
 }, {
-  "uid" : "cfa037690e2e03d6",
-  "name" : "TestMethod_fail",
+  "uid" : "6c4ac92fdf86a81a",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
   "time" : {
-    "start" : 1655022136824,
-    "stop" : 1655022139093,
-    "duration" : 2269
+    "start" : 1655869132298,
+    "stop" : 1655869132298,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "f270eadd56ea570d",
+  "name" : "MainPage_SearchBarTesting",
+  "time" : {
+    "start" : 1655870056396,
+    "stop" : 1655870056396,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "db1823d8f8e9eec5",
+  "name" : "Underwriting_Search",
+  "time" : {
+    "start" : 1655871398568,
+    "stop" : 1655871417354,
+    "duration" : 18786
   },
   "status" : "failed",
   "severity" : "critical"
+}, {
+  "uid" : "df910bb4786752cb",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655439693359,
+    "stop" : 1655439693359,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8bb8df7efc4a7e2d",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655870056450,
+    "stop" : 1655870056450,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "712749e10088b36f",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655788901532,
+    "stop" : 1655788901532,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "ed69ddf9c8b1bffd",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655791401660,
+    "stop" : 1655791401661,
+    "duration" : 1
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8bf4de30c13b300e",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655791378049,
+    "stop" : 1655791378049,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "2ef9bad57e4b6b6d",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655095427637,
+    "stop" : 1655095441484,
+    "duration" : 13847
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c095fdb8544a2182",
+  "name" : "MainPage_SearchBarTesting",
+  "time" : {
+    "start" : 1655866827955,
+    "stop" : 1655866913375,
+    "duration" : 85420
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "41f3598539817e4f",
+  "name" : "TestMethod1",
+  "time" : {
+    "start" : 1655088318673,
+    "stop" : 1655088318675,
+    "duration" : 2
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "63ce04c1c7f8ca1e",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655866913406,
+    "stop" : 1655866913406,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "8923bbca0600e709",
+  "name" : "EM_PU_Upload_Portfolio_Base_Portfolio",
+  "time" : {
+    "start" : 1655791411788,
+    "stop" : 1655791411788,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "c4cee75c44f73656",
+  "name" : "TestMethod_fail",
+  "time" : {
+    "start" : 1655088318585,
+    "stop" : 1655088318618,
+    "duration" : 33
+  },
+  "status" : "failed",
+  "severity" : "critical"
+}, {
+  "uid" : "3bdd7cb3d0104480",
+  "name" : "MainPage_SearchBarTesting",
+  "time" : {
+    "start" : 1655869132244,
+    "stop" : 1655869132244,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "4bc8c3ceab566b25",
+  "name" : "MainPage_SearchBarTesting",
+  "time" : {
+    "start" : 1655869882268,
+    "stop" : 1655869882268,
+    "duration" : 0
+  },
+  "status" : "skipped",
+  "severity" : "normal"
 } ]

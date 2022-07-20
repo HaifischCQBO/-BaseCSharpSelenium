@@ -140,6 +140,8 @@ public class Functions
 
     public string GetText(By by)
     {
-        return _wait.Until(ExpectedConditions.ElementExists(by)).Text;
+        var text = _wait.Until(ExpectedConditions.ElementIsVisible(by)).Text;
+        Print("Got Text: " + text + " from element: " + by );
+        return text;
     }
 }

@@ -4,13 +4,13 @@ using SeleniumTest_Alpha.Helpers;
 
 namespace SeleniumTest_Alpha.Pages;
 
-public class PageIndex
+public class IndexPage
 {
     private IWebDriver _driver;
     private Functions _function;
 
 
-    public PageIndex(IWebDriver driver)
+    public IndexPage(IWebDriver driver)
     {
         _driver = driver;
         _function = new Functions(driver);
@@ -36,6 +36,11 @@ public class PageIndex
     private By _portfolioUploadLink = By.Id("portfolio-upload-link");
     private By _reportsLink = By.Id("reports-section-link");
 
+    
+    /**LOGO TO RETURN TO MAINPAGE*/
+    private By CometaLogo_link = By.XPath("//a[@class='cometa-logo']");
+
+    
     // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS 
     
     //SOLUTIONS

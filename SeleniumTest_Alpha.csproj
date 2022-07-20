@@ -34,10 +34,5 @@
     <ItemGroup>
       <None Remove="SeleniumTestLocal\**" />
     </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Pages\Solutions" />
-      <Folder Include="Pages\Utilities" />
-    </ItemGroup>
     
 </Project>

@@ -4,22 +4,52 @@
   "children" : [ {
     "name" : "Product defects",
     "children" : [ {
-      "name" : "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#d\"}\n  (Session info: chrome=102.0.5005.63)",
+      "name" : "System.ArgumentNullException : input cannot be null (Parameter 'input')\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
       "children" : [ {
         "name" : "TestMethod_fail",
-        "uid" : "cfa037690e2e03d6",
-        "parentUid" : "94848a1ad09ffc06c6cec151632ec2d7",
+        "uid" : "c4cee75c44f73656",
+        "parentUid" : "4342ba3bcc9813a46bf7ec5b49d908e5",
         "status" : "failed",
         "time" : {
-          "start" : 1655022136824,
-          "stop" : 1655022139093,
-          "duration" : 2269
+          "start" : 1655088318585,
+          "stop" : 1655088318618,
+          "duration" : 33
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "TestMethod1",
+        "uid" : "41f3598539817e4f",
+        "parentUid" : "4342ba3bcc9813a46bf7ec5b49d908e5",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655088318673,
+          "stop" : 1655088318675,
+          "duration" : 2
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "94848a1ad09ffc06c6cec151632ec2d7"
+      "uid" : "4342ba3bcc9813a46bf7ec5b49d908e5"
+    }, {
+      "name" : "OpenQA.Selenium.ElementNotInteractableException : element not interactable\n  (Session info: chrome=102.0.5005.115)",
+      "children" : [ {
+        "name" : "Underwriting_Search",
+        "uid" : "db1823d8f8e9eec5",
+        "parentUid" : "753e23035f78b1790508f1a7f7ef165c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1655871398568,
+          "stop" : 1655871417354,
+          "duration" : 18786
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "753e23035f78b1790508f1a7f7ef165c"
     } ],
     "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
   } ]

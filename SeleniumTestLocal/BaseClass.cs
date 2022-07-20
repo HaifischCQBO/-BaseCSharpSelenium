@@ -15,7 +15,7 @@ public class BaseClass
     public IWebDriver _driver = null!;
     public Functions _functions;
 
-    private string dirpath = @"D:\Users\victo\Documents\GitHub\BaseCSharpSelenium\SeleniumTestLocal\Screenshots";
+    private string dirpath = @"D:\Users\victo\Documents\GitHub\BaseCSharpSelenium\SeleniumTestLocal\resources\Screenshots";
 
     [SetUp]
     public void Setup()

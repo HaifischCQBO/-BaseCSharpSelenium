@@ -2,15 +2,15 @@
 using OpenQA.Selenium;
 using SeleniumTest_Alpha.Helpers;
 
-namespace SeleniumTest_Alpha.Pages.Solutions.EM;
+namespace SeleniumTest_Alpha.Pages.Utilities;
 
-public class PagePorftolioUpload
+public class PorftolioUploadPage
 {
     private IWebDriver _driver;
     private Functions _function;
 
 
-    public PagePorftolioUpload(IWebDriver driver)
+    public PorftolioUploadPage(IWebDriver driver)
     {
         _driver = driver;
         _function = new Functions(driver);
@@ -18,11 +18,14 @@ public class PagePorftolioUpload
 
     // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT
     private By _portfolioUploadButton = By.XPath("//button[text()='Go to Portfolio Upload']");
-
+    private By _pageTitle = By.XPath("//div[contains(@class, 'title_')]");
     private By _uploadPortfolioFileInput = By.XPath("//input[@type='file']");
     private By _submitPortfolioButton = By.XPath("//button[text()='SUBMIT']");
     private By _submittedMessageDiv = By.XPath("//div[starts-with(@class, 'message')]");
 
+    /**LOGO TO RETURN TO MAINPAGE*/
+    private By CometaLogo_link = By.XPath("//a[@class='cometa-logo']");
+    
     // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS 
     [AllureStep("Go to Exposure Management")]
     public void goToPortfolioUpload()
@@ -38,11 +41,11 @@ public class PagePorftolioUpload
         var startupPath = currentDirectory.Parent.Parent.Parent.FullName;
 
 
-        for (var x = 1; x <= 2; x++)
+        for (var x = 1; x <= 10; x++)
         {
             var file = startupPath + "\\resources\\portfolios\\Portfolio_" + x + ".xlsx";
             _function.SendText(_uploadPortfolioFileInput, file);
-            //helpers.Pause(10);
+            _function.Pause(5);
             submitPortfolio();
             waitForElementToUpload();
         }
@@ -66,5 +69,16 @@ public class PagePorftolioUpload
         }
 
         return false;
+    }
+    [AllureStep("Go to Main Page")]
+    public void GoToMainPage()
+    {
+        _function.Click(CometaLogo_link);
+    }
+    
+    [AllureStep("Get Page Title for verification")]
+    public string GetPageTitle()
+    {
+        return _function.GetText(_pageTitle).ToUpper();;
     }
 }
