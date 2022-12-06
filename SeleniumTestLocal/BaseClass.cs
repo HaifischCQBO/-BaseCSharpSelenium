@@ -12,7 +12,7 @@ namespace SeleniumTestLocal;
 [TestFixture]
 public class BaseClass
 {
-    public IWebDriver _driver = null!;
+    public IWebDriver _driver;
     public Functions _functions;
 
     private string dirpath = @"D:\Users\victo\Documents\GitHub\BaseCSharpSelenium\SeleniumTestLocal\resources\Screenshots";

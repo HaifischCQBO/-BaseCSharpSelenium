@@ -15,6 +15,12 @@ public class BrowserConfig
         var headlessMode = _functions.getXMLParameter("headless");
         if (browserString.Equals("chrome"))
         {
+            //FOLDER CONFIGURATION FOR DOWNLOADS
+            var currentDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
+            var startupPath = currentDirectory.Parent.Parent.Parent.FullName;
+            var destinationPath = startupPath + "\\resources\\portfolios\\downloads";
+            
+            
             var chromeOptions = new ChromeOptions();
             if (headlessMode.Equals("true"))
             {
@@ -26,7 +32,8 @@ public class BrowserConfig
             chromeOptions.AddArguments("--test-type=ui");
             chromeOptions.AddArguments("--disable-gpu-sandbox");
             chromeOptions.AddArguments("--disable-dev-shm-usage");
-
+            chromeOptions.AddUserProfilePreference("download.default_directory", destinationPath);
+            chromeOptions.AddUserProfilePreference("download.prompt_for_download", false);
             driver = new ChromeDriver(chromeOptions);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             driver.Manage().Window.Maximize();

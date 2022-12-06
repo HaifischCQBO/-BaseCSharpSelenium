@@ -1,4 +1,4 @@
-using Allure.Commons;
+/*using Allure.Commons;
 using NUnit.Allure.Attributes;
 using NUnit.Allure.Core;
 using NUnit.Framework;
@@ -29,11 +29,11 @@ public class StructureSmokeTest : BaseClass
     {
 
         var indexPage = new IndexPage(_driver);
-        /*SOLUTIONS*/
+        /*SOLUTIONS#1#
         var exposureManagementPage = new ExposureManagementPage(_driver);
         var underwritingPage = new UnderwritingPage(_driver);
         var litigationTrackingPage = new LitigationTrackingPage(_driver);
-        /*RISK PROFILES*/
+        /*RISK PROFILES#1#
         var litigationAgentsPage = new LigationAgentsPage(_driver);
         var companiesPage = new CompaniesPage(_driver);
         var industriesPage = new IndustriesPage(_driver);
@@ -41,7 +41,7 @@ public class StructureSmokeTest : BaseClass
         var scenariosPage = new ScenariosPage(_driver);
         var themePage = new ThemesPage(_driver);
         var insightPage = new InsightsPage(_driver);
-        /*UTILITIES*/
+        /*UTILITIES#1#
         var portfolioUploadPage = new PorftolioUploadPage(_driver);
         var reportPage = new ReportPage(_driver);
 
@@ -95,4 +95,4 @@ public class StructureSmokeTest : BaseClass
         
 
     }
-}
+}*/

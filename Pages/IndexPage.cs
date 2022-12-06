@@ -18,6 +18,8 @@ public class IndexPage
 
     // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT // WEB ELEMENT
 
+    
+    
     //SOLUTIONS
     private By _exposureManagementLink = By.Id("exposure-management-link");
     private By _underwritingLink = By.Id("company-risk-score-link");
@@ -39,6 +41,9 @@ public class IndexPage
     
     /**LOGO TO RETURN TO MAINPAGE*/
     private By CometaLogo_link = By.XPath("//a[@class='cometa-logo']");
+    private By _dashboardAccountButton = By.XPath("//button[starts-with(@class, 'account-button__')]");
+    private By _dashboardLogOutLink = By.XPath("//a[starts-with(@class, 'logout-link__')]");
+
 
     
     // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS 
@@ -115,5 +120,10 @@ public class IndexPage
     public void goToReport()
     {
         _function.Click(_reportsLink);
+    }
+    [AllureStep("Log out from dashboard")]
+    public void LogOut(){
+       _function.Click(_dashboardAccountButton);
+       _function.Click(_dashboardLogOutLink);
     }
 }

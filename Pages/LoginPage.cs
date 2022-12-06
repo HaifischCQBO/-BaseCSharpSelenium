@@ -24,11 +24,19 @@ public class PageLogin
 
     // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS // FUNCTIONS 
     
-    [AllureStep("Login with user and password credentials")]
+    [AllureStep("Login with user and password credentials from configuration files")]
     
     public void MakeLogin(){
         _function.SendText(_usernameInput, _function.getXMLParameter("username"));
         _function.SendText(_passwordInput, _function.getXMLParameter("password"));
         _function.Click(_signinLink);
     }
+    [AllureStep("Login with user and password credentials from parameteres")]
+
+    public void MakeLogin(string username, string password){
+        _function.SendText(_usernameInput, username);
+        _function.SendText(_passwordInput, password);
+        _function.Click(_signinLink);
+    } 
+   
 }
